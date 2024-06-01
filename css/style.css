@@ -1,0 +1,733 @@
+:root {
+  --hintergrund:rgb(225, 222, 225);
+  --graue-headings: rgb(209, 204, 204);
+  --weiss-cv: rgb(243, 241, 241);
+  --test-farbe:yellow;
+  --haupt-schrift:'Courier New', Courier, monospace;
+  --zusatz-schrift:Matter, sans-serif;
+}
+
+
+body {background: var(--hintergrund);}
+
+hr {opacity: 0.4;}
+
+.cool-link {
+  color: #780000;
+}
+
+h2 {
+  font-family: var(--haupt-schrift);
+  font-weight:bold;
+  text-transform: uppercase;
+  background: var(--graue-headings);
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 5px;
+}
+
+/*#########################################################################*/
+/* HEADER */
+header {
+  padding: 20px 50px 20px 50px;
+  margin: 10px;
+  display:flex;
+}
+.left-header {
+  flex:1;
+  display:flex;
+}
+.left-header a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+  font-family: var(--haupt-schrift);
+  font-size: xx-large;
+  font-weight:bold;
+  opacity:1;
+}
+.right-header {
+  flex:1;
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 20%;
+}
+.right-header a {
+  color:inherit;
+  text-decoration:none;
+  opacity:1;
+  font-family: var(--haupt-schrift);
+  font-size: x-large;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+.left-header a:hover {
+  opacity:0.5;
+}
+.right-header a:hover {
+  opacity:0.5;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 50px 20px 20px;
+  }
+  .right-header {
+    display: none;
+  }
+  .left-header a {
+    font-size: x-large;
+  }
+  .left-header {
+    width:80%;
+  }
+}
+
+@media (min-width:769px) and (max-width:1399px) {
+  .right-header {
+    width:50%;
+    margin-left: 0;
+  }
+  .right-header a {
+    font-size:large;
+  }
+}
+
+
+/*#########################################################################*/
+/* MIDDLE */
+middle {
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*#########################################################################*/
+/* FOOTER */
+footer {
+  width: 100%;
+  padding:20px 0;
+  text-align: center;
+} 
+.footer_container {
+  display: flex;
+  justify-content: center;
+}
+.footer-left {
+  margin-right: 30px;
+}
+.footer-right {
+  margin-left:30px;
+}
+.footer_item h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  /* font-size:16px; */
+  /* font-family:'Courier New', Courier, monospace; */
+  /* font-weight:bold; */
+  /* text-transform: uppercase; */
+}
+.footer_item ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  margin-bottom:0;
+  font-size:14px;
+}
+.footer_item ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:1;
+}
+.footer_item ul a:hover {
+  opacity:0.5;
+}
+.copyright {
+  margin-top:25px;
+  margin-bottom:0;
+  font-size:13px;
+  opacity:0.6;
+  text-align:center;
+}
+@media (min-width: 768px) {
+.footer_item h3 {
+  font-size:30px;
+}
+.footer_item ul {
+  font-size:20px;
+}
+}
+#socialmedia {
+display:flex;
+justify-content:center;
+align-items:center;
+padding: 20px 0;
+}
+.socials {
+width:40px;
+margin:5px;
+opacity:1;
+}
+.socials:hover {
+  opacity:0.5;
+}
+
+
+/*#########################################################################*/
+/* DROPDOWN BUTTON (ONLY FOR PHONES)*/
+.dropdown {
+    text-align: center;
+    position:absolute;
+    top:15px;
+    right:10px;
+    display: inline-block;
+    z-index:1000; /* very large to keep it always in the front */
+}
+
+.dropbtn {
+    background: var(--hintergrund);
+    color: white;
+    padding: 15px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background: black;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.cross .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.cross .bar:nth-child(2) {
+  opacity: 0;
+}
+.cross .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    font-size: 20px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background: #a7aaad;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+@media (pointer: fine) {
+  /* Rules for devices with mouse here */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .dropdown * {
+    display: none;
+  }
+}
+
+
+/*#########################################################################*/
+/* PROJECTS */
+.iconcontainer, .projecticoncontainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items:center;
+  width: 100%;
+}
+
+.iconrow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+}
+
+.iconrow img {
+  width: 15%;
+  height: auto;
+  padding: 2.5%;
+  cursor: pointer;
+}
+
+
+.iconrow img:hover {
+  transform: scale(1.2);
+}
+
+.flexibletextcontainer, .projecttextcontainer {
+  text-align: center;
+  width: 60%;
+  /* padding-top:50px; */
+  padding-bottom:50px;
+  font-size: x-large;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  .iconrow img {
+    width: 20%;
+    height: auto;
+    padding: 5%;
+  }
+  .flexibletextcontainer, .projecttextcontainer {
+    width: 90%;
+    font-size: large;
+  }
+}
+
+@media (min-width: 1100px) {
+  .iconrow img {
+    width: 9%;
+    height: auto;
+    padding: 2%;
+  }
+  .flexibletextcontainer, .projecttextcontainer {
+    width: 36%;
+    font-size: x-large;
+  }
+}
+
+@media (min-width: 1400px) {
+  .iconrow img {
+    width: 7%;
+    height: auto;
+    padding: 2%;
+  }
+  .flexibletextcontainer, .projecttextcontainer {
+    width: 30%;
+    font-size: x-large;
+  }
+}
+
+
+/*#########################################################################*/
+/* HOME PAGE */
+.overview {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px 0;
+  width:80%;
+}
+
+.inview {
+  border:solid 2px;
+  position: relative;
+  flex: 1;
+  margin:10px;
+}
+
+.inview img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity:0.5;
+}
+
+.picturetext {
+  display:block;
+  position: absolute;
+  bottom: 45%;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  font-size:x-large;
+  font-weight: bold;
+  text-shadow: 0 0 10px white;
+}
+
+.inview:hover .picturetext {
+  display: block;
+}
+
+.inview:hover img{
+  opacity:0.3;
+}
+
+.inview a {
+  text-decoration: none; /* Remove underline from the links */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  color: inherit; /* Set the link text color to black */
+}
+
+@media (max-width:768px) {
+  .overview {
+    flex-direction: column;
+    text-align:center;
+    width:70%;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+  .inview {
+    margin-left:auto;
+    margin-right:auto;
+    width: 70%;
+  }
+  .picturetext {
+    display:block;
+    font-size:large;
+    bottom:30%;
+  }
+  .inview img{
+    opacity:0.5;
+  }
+}
+
+@media (max-width:600px) {
+  .overview {
+    width:100%;
+  }
+
+
+}
+
+@media (min-width:1400px) {
+  .overview {
+    width:50%;
+  }
+}
+
+@media (pointer: fine) {
+  /* Rules for devices with mouse here */
+  .picturetext {
+    display:none;
+  }
+  .inview img {
+    opacity:1
+  }
+}
+
+/*#########################################################################*/
+/* images next to text in about.html file */
+/* Base styles for larger screens */
+.container {
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  text-align: center;
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image {
+  flex: 1;
+  text-align: center; /* Center the image within its column */
+}
+.text {
+  flex: 1;
+}
+
+.image img{
+  width:95%;
+}
+
+.text .about-text {
+  text-align:justify;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size:x-large;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+  .image {
+      order: 1; /* Place the image above the text */
+      text-align: center; /* Center the image on smaller screens */
+  }
+  .text {
+      order: 2; /* Place the text below the image */
+  }
+  .text .about-text {
+    width: 100%;
+    font-size:large;
+  }
+  .image img{
+    width:100%;
+  }
+}
+
+@media (min-width:1400px) {
+  .container {
+    width:80%;
+  }
+  .image img{
+    width:75%;
+  }
+  .text .about-text {
+    width:75%;
+  }
+}
+
+
+/*#########################################################################*/
+/* Slideshow in About.html */
+/* * {box-sizing:border-box} */
+
+/* Slideshow container */
+.slideshow-container {
+  width:30%;
+  aspect-ratio: 3/4;
+  position: relative;
+  margin:auto;
+  margin-top:50px;
+  border:solid;
+  overflow: hidden; /*Hide any overflow if the images are wider than the container */
+}
+
+.mySlides {
+  height:100%;
+}
+
+.mySlides img{
+  height:100%;
+  width:100%;
+  margin: auto; /* Centers the image horizontally within the container */
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 26px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: large;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  margin-bottom:50px;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media (max-width:768px) {
+  .slideshow-container {
+    width:90%;
+  }
+  .prev, .next {
+    padding: 20px;
+  }
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+  .slideshow-container {
+    width:60%;
+  }
+  .prev, .next {
+    padding: 30px;
+  }
+}
+
+/*#########################################################################*/
+/* Intro Text in About.html */
+.mytext {
+  text-align:justify;
+  width:60%;
+  margin:auto;
+  font-size: x-large;
+  padding: 5px 0;
+}
+
+@media (min-width:1400px) {
+  .mytext {
+    width:40%;
+  }
+}
+
+@media (max-width:768px) {
+  .mytext {
+    width:90%;
+    font-size: large;
+    margin-right:10%;
+  }
+}
+
+/*#########################################################################*/
+/* RESUME */
+#resume-placeholder {
+  display:grid;
+  width:40%;
+  min-height: 1000px;
+  background: var(--weiss-cv);
+  margin:auto;
+  padding:30px;
+  border-radius: 20px;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 2fr 4fr 4fr 4fr 3fr 3fr;
+  grid-gap:15px;
+}
+.resume-experience, .resume-education-skillset{
+  padding: 5px;
+  font-family: var(--haupt-schrift);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.resume-experience {
+  grid-row: 2 / 5;
+}
+.resume-header {
+  grid-column: 1 / -1;
+}
+.text-100 {
+  font-family: var(--haupt-schrift);
+  font-size: xx-large;
+  font-weight:bold;
+  opacity:1;
+  text-align:center;
+  padding-top: 20px;
+}
+.resume-item {
+  display:flex;
+  flex-direction:column;
+}
+.skillset-resume-item {
+  display:flex;
+}
+.skillset-resume-inner {
+  width:50%
+}
+
+.text-101 {
+  color: #242426;
+  font-family: var(--zusatz-schrift);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.text-102 {
+  color: #b3b3b8;
+  font-family: var(--zusatz-schrift);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.text-103 {
+  color: #242426;
+  font-family: var(--zusatz-schrift);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+@media (min-width:769px) and (max-width:1399px) {
+  #resume-placeholder {
+    width:60%;
+  }
+}
+
+@media (max-width:768px) {
+  #resume-placeholder {
+    width:85%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 5fr 4fr 4fr 1fr 3fr 1fr 3fr;
+    min-height: 1050px;
+  }
+  .resume-experience, .resume-education-skillset{
+    padding: 0px;
+  }
+  .resume-experience {
+    grid-row: 2 / 3;
+  }
+  .resume-header {
+    grid-column: 1 / 2;
+  }
+  .resume-item {
+    display:flex;
+    flex-direction:column;
+  }
+  .skillset-resume-item {
+    display:flex;
+  }
+  .skillset-resume-inner {
+    width:50%
+  }
+}
+

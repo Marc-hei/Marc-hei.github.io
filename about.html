@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Me</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="pics/favicon.ico"/>
+ </head>
+
+
+<body>
+  <header>
+    <div class="left-header">
+      <a href="index.html" id="Home-Button">Marc Heinimann</a>
+    </div>
+    <div class="right-header">
+      <a href="about.html" class="navigation-content">About Me</a>
+      <a href="projects.html" class="navigation-content">Projects</a>
+      <a href="resume.html" class="navigation-content">Resume</a>
+    </div>
+    <div class="dropdown" id="menu-toggle" onclick="toggleDropdown()">
+      <button class="dropbtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      </div>
+      </div>
+  </header>
+  <hr>
+  <middle>
+  <h2>Some Facts About Me</h2>
+  <ul>
+    <li class="mytext">
+      Hi, my name is Marc. I am 20 years old and I study Business Informatics at the University of Zurich. Currently, I am in the fourth semester of my bachelor's degree.
+    </li>
+    <li class="mytext">
+      Why am I studying this curriculum? The interdependence between the worlds of IT and Business are fascinating. While IT focuses on the technical aspects of information systems and infrastructure, Business emphasizes strategy, operations, and market dynamics. The synergy between these realms is crucial for an organization's present and future. The successful integration of IT and Business allows for innovation, efficiency, and competitive advantage, showcasing the necessity of skills in both technology and strategy in the modern business environment. Additional information can be found <a href="#studying" class="cool-link">here</a>.
+    </li>
+    <li class="mytext">
+      I love to learn and to teach. As a student, I am surrounded by intellectual and cognitive challenges all the time. At the same time, I share my knowledge in mathematics as a tutor for first-year students and in skiing as a ski instructor for young kids. Feel free to read more <a href="#skiing" class="cool-link">below</a>.
+    </li>
+    <li class="mytext">
+      In my Minor (30 ECTS), I study Banking & Finance. The financial world has caught my interest in the early years of my life and I am eager to learn more about markets, risks, accounting and audit in my further studies.
+
+    </li>
+    <li class="mytext">
+      In my leisure time, I like to do two things: Firstly, I often explore places in the outside world to broaden my cultural and geographical horizon. Secondly, I enjoy tackling algorithmic challenges, engaging in small projects, and constructing meaningful solutions - whether it's overcoming complex coding hurdles or crafting my own website.
+    </li>
+    <li class="mytext">
+      Upon completing my bachelor's degree at UZH in spring 2025, I plan on either continuing with a master's degree in a related file or to enter the workforce for a year, seeking valuable practical experience in the landscape of IT and businesses.
+    </li>
+
+  </ul>  
+
+  <hr><h2 id="skiing">Ski Instructor</h2>
+  <div class="container">
+    <div class="image">
+        <img src="pics/ski.jpg"alt="Me skiing">
+    </div>
+    <div class="text">
+      <p class="about-text">
+        Since 2020, I have immersed myself in the world of ski instruction, dedicating my days to teaching the art of skiing to 7-12-year-old children. Guiding these young enthusiasts through the snowy slopes is a funny and rewarding journey, as I could witness their progression to confident, successful skiers as well as their social and cognitive growth.
+        <br><br>
+        Beyond honing their technical skills, my role extends to keeping children save, ensuring fairness and a sense of camaraderie, as well as coping with children's lifes, problems and joys.
+        <br><br>
+        My joy for skiing stems from my childhood, where I was an athlete myself.
+      </p>
+    </div>
+  </div>
+
+  <hr><h2 id="studying">B.Sc. in Business Informatics</h2>
+  <div class="container">
+    <div class="text">
+      <p class="about-text">
+        My bachelor's degree is a field that delves into the design, management, and utilization of information technology in various organizations. My coursework encompasses a wide range of topics, including database management, software development, and business process optimization, equipping me with a versatile skill set.
+        As a Business Informatics student, I gain a deep understanding of how technology can be leveraged to address complex business challenges, making me adept at solving real-world problems.
+        <br><br>
+        Beyond technical skills, I develop a strong foundation in business acumen, understanding how technology aligns with an organization's strategic goals and competitive advantage.
+        Overall, my studies provide me with the knowledge and expertise to become a valuable contributor to the dynamic and ever-evolving world of information technology and business.
+      </p>
+    </div>
+    <div class="image">
+      <img src="pics/teaching.jpg" alt="Mathematics Tutor">
+  </div>
+  </div>
+
+
+
+  <hr><h2>Travel & Nature</h2>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 6</div>
+      <img src="pics/slideshow/winter1.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 6</div>
+      <img src="pics/slideshow/stadt2.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 6</div>
+      <img src="pics/slideshow/berge1.jpg">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="pics/slideshow/stadt5.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="pics/slideshow/burg2.jpg">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="pics/slideshow/winter4.jpg">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+    <span class="dot" onclick="currentSlide(5)"></span>
+    <span class="dot" onclick="currentSlide(6)"></span>
+  </div>
+
+  </middle>
+  <hr>
+  <footer>
+    <div class="footer_container">
+      <div class="footer_item footer-left">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer_item footer-right">
+        <h3>About</h3>
+        <ul>
+          <li>Marc Heinimann</li>
+          <li>8610, Uster</li>
+          <li>Switzerland</li>
+          <li>---</li>
+        </ul>
+      </div>
+    </div>
+    <div id="socialmedia">
+      <a href="https://www.linkedin.com/in/marc-heinimann"><img src="pics/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
+      <a href="https://www.github.com/Marc-hei"><img src="pics/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
+      <a href="https://www.instagram.com/marc.heini"><img src="pics/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
+      <a href="mailto:marcheinimann@bluewin.ch"><img src="pics/icons/mail_icon.svg" class="socials" alt="Contact Me"></a>
+    </div>
+    <p class="copyright">Marc Heinimann © 2023</p>
+  </footer>
+
+</body>
+<script>
+  let slideIndex = 1;
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+      showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+      showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+  }
+
+  const hamburger = document.getElementById('menu-toggle');
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('cross');
+  });
+
+  function toggleDropdown() {
+      let dropdownContent = document.querySelector('.dropdown-content');
+      if (dropdownContent.classList.contains('show')) {
+          dropdownContent.classList.remove('show');
+      } else {
+          dropdownContent.classList.add('show');
+      }
+  }
+</script>
+</html>

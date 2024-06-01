@@ -1,0 +1,112 @@
+<!DOCTYPE html> <!-- start index.html-->
+<html lang="en">
+<head>
+    <title>Marc Heinimann</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="pics/favicon.ico"/>
+ </head>
+
+
+<body>
+  <header>
+    <div class="left-header">
+      <a href="index.html" id="Home-Button">Marc Heinimann</a>
+    </div>
+    <div class="right-header">
+      <a href="about.html" class="navigation-content">About Me</a>
+      <a href="projects.html" class="navigation-content">Projects</a>
+      <a href="resume.html" class="navigation-content">Resume</a>
+    </div>
+    <div class="dropdown" id="menu-toggle" onclick="toggleDropdown()">
+      <button class="dropbtn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <div class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      </div>
+      </div>
+  </header>
+  <hr>
+  <middle>
+    <div class="overview">
+      <div class="inview">
+        <a href="projects.html">
+          <img src="pics/inview1.jpg">
+          <p class="picturetext">
+            Projects and Skills
+          </p>
+      </a>
+      </div>
+      <div class="inview">
+        <a href="about.html">
+          <img src="pics/inview2.jpg">
+          <p class="picturetext">
+            Hobbies and Interests
+          </p>
+        </a>
+      </div>
+      <div class="inview">
+        <a href="resume.html">
+          <img src="pics/inview3.jpg">
+          <p class="picturetext">
+            Work and Education
+          </p>
+        </a>
+      </div>
+    </div>
+  </middle>
+  <hr>
+  <footer>
+    <div class="footer_container">
+      <div class="footer_item footer-left">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+      <div class="footer_item footer-right">
+        <h3>About</h3>
+        <ul>
+          <li>Marc Heinimann</li>
+          <li>8610, Uster</li>
+          <li>Switzerland</li>
+          <li>---</li>
+        </ul>
+      </div>
+    </div>
+    <div id="socialmedia">
+      <a href="https://www.linkedin.com/in/marc-heinimann"><img src="pics/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
+      <a href="https://www.github.com/Marc-hei"><img src="pics/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
+      <a href="https://www.instagram.com/marc.heini"><img src="pics/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
+      <a href="mailto:marcheinimann@bluewin.ch"><img src="pics/icons/mail_icon.svg" class="socials" alt="Contact Me"></a>
+    </div>
+    <p class="copyright">Marc Heinimann © 2023</p>
+  </footer>
+
+
+</body>
+<script>
+  function toggleDropdown() {
+    var dropdownContent = document.querySelector('.dropdown-content');
+    if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
+    } else {
+        dropdownContent.classList.add('show');
+    }
+  }
+  const hamburger = document.getElementById('menu-toggle');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('cross');
+  });
+</script>
+</html>
