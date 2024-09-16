@@ -125,4 +125,19 @@
   </footer>
 
 </body>
+<script>
+  const hamburger = document.getElementById('menu-toggle');
+  hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('cross');
+  });
+
+  function toggleDropdown() {
+    let dropdownContent = document.querySelector('.dropdown-content');
+    if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
+    } else {
+        dropdownContent.classList.add('show');
+    }
+  }
+</script>
 </html>
