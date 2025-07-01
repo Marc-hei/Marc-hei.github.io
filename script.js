@@ -50,10 +50,11 @@ function updateHobbiesSection() {
   });
 }
 
+
+
+scaleOnScroll()
 updateHobbiesSection();
 setInterval(updateHobbiesSection, 60 * 60 * 1000);
-
-
 
 // EVENT LISTENERS
 hamburger.addEventListener('click', () => {hamburger.classList.toggle('cross'); toggleDropdown();});
