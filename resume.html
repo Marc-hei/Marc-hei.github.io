@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Marc Heinimann - Resume</title>
+  <title>Marc's Portfolio'</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="xjLrTFQAKE7mEuUwWKV0wiGo9HeS_MAcynYNPcqOw8Q" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="apple-touch-icon" sizes="180x180" href="pics/favicon_io/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="pics/favicon_io/favicon-32x32.png">
@@ -15,10 +18,9 @@
 <body>
   <header>
     <div class="left-header">
-      <a href="index.html" id="Home-Button">Marc Heinimann</a>
+      <a href="index.html" id="home-button"><img src="pics/favicon_io/favicon-32x32.png" alt="logo"/></a>
     </div>
     <div class="right-header">
-      <a href="about.html" class="navigation-content">About Me</a>
       <a href="projects.html" class="navigation-content">Projects</a>
       <a href="resume.html" class="navigation-content">Resume</a>
     </div>
@@ -30,91 +32,109 @@
       </button>
       <div class="dropdown-content">
       <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
       <a href="projects.html">Projects</a>
       <a href="resume.html">Resume</a>
       </div>
     </div>
   </header>
+
   <middle>
 
-    <div id="resume-placeholder">
+  <div id="white-container" class="scale-box">   
+    <div class="bio">
+        <h1 class="hello">
+          <span style="color:#1565c0">H</span>
+          <span style="color:#43a047">e</span>
+          <span style="color:#fbc02d">L</span>
+          <span style="color:#ef6c00">L</span>
+          <span style="color:#f06292">o</span>
+          <span style="color:#7e57c2">!</span>
+        </h1>
+      <div class="introduction">
+        <p class="text-103">Hi, my name is Marc. I am 22 years old and I just finished my Bachelor's degree in Business Informatics at UZH. Now it is time to go deeper into the field of informatics, especially cyber security. I'm now starting a joint Master's degree at ETHZ and EPFL in Cyber Security!</p></p>
+        <p class="text-103">Why did I study <span class="blue">Business Informatics</span>? The interdependence between the worlds of IT and Business are fascinating. While IT focuses on the technical aspects of information systems and infrastructure, Business emphasizes strategy, operations, and market dynamics. The synergy between these realms is crucial for an organization's present and future. The successful integration of IT and Business allows for innovation, efficiency, and competitive advantage, showcasing the necessity of skills in both technology and strategy in the modern business environment. In my Minor (30 ECTS), I study Banking & Finance. The financial world has caught my interest in the early years of my life and I am eager to learn more about markets, risks, accounting and audit in my further studies.</p>
+        <p class="text-103">Why do I want to study <span class="blue">Cyber Security</span>? In today's increasingly digital and interconnected world, cybersecurity has become a cornerstone of both organizational resilience and individual safety. I am deeply intrigued by the challenge of securing systems against ever-evolving threats and understanding the mechanisms behind digital vulnerabilities. Cyber Security uniquely blends technical depth with strategic thinking, offering the opportunity to protect assets, privacy, and data integrity on a global scale. I am motivated by the idea of not only defending infrastructures but also proactively contributing to safer digital ecosystems. With a strong foundation in informatics and a solid understanding of business operations, I believe I can bring a holistic approach to solving security challenges in both corporate and societal contexts.</p>
+      </div>
+    </div>
+  </div>
+
+
+    <div id="white-container" class="scale-box">
       <div class="resume-header">
-        <div class="text-100">Marc Heinimann</div>
+        <div class="text-100">Resume</div>
       </div>
-      <div class="resume-experience">Experience</div>
-      <div class="resume-item">
-        <div class="text-101">OBT AG • Informatics Internship</div>
-        <div class="text-102">June 2024 - September 2024 | Zurich, ZH</div>
-        <div class="text-103">Digitalized a questionnaire which was filled out by clients. Used Express.js, React.js, Microsoft Azure, MongoDB and Python Flask to achieve our goals.</div>
-      </div>
-      <div class="resume-item">
-        <div class="text-101">UBS Switzerland AG • Security Specialist</div>
-        <div class="text-102">Sep 2021 - Apr 2022 | Opfikon, ZH</div>
-        <div class="text-103">Orchestrated the secure and efficient movement of financial assets among clients and different organizations. Transfer of different types of assets: Shares, Bonds, Funds, and more complex products like Derivatives, Precious Metals or Hedge Funds.</div>
-      </div>
-      <div class="resume-item">
-        <div class="text-101">University of Zurich • Teaching Assistant</div>
-        <div class="text-102">Sep 2023 - Present | Zurich, ZH</div>
-        <div class="text-103">Held two 90-minute lessons per week and teached the first-year students about mathematical content. My goal was to prepare the students that visited my lessons as best as I could for the approaching exam.</div>
-      </div>
-      <div class="resume-item">
-        <div class="text-101">Skiclub Parpan • Ski Trainer</div>
-        <div class="text-102">Winter 2020 - Present | Parpan, GR</div>
-        <div class="text-103">Teached the way of apline skiing to a handful of young kids which turned out to be enthusiastic and good athletes. My goal was to incite the passion of skiing in the kids' minds.</div>
-      </div>
-      
-      
-      <div class="resume-education-skillset">Education</div>
-      <div class="resume-item">
-        <div class="text-101">University of Zurich</div>
-        <div class="text-102">Sep 2022 - June 2025 | 5.8 Notenschnitt</div>
-        <div class="text-103">B.Sc. Business Informatics with a minor in Banking and Finance</div>
-      </div>
-      <div class="resume-education-skillset">Skillset</div>
-      <div class="skillset-resume-item">
-        <div class="skillset-resume-inner">
-          <div class="text-101">Languages</div>
-          <div class="text-103">German, English, French</div>
+      <div class="resume-section">
+        <div class="resume-name">Experience</div>
+         <div class="resume-items">
+          <div class="resume-item">
+            <div class="text-101"><span class="blue">OBT AG</span> • Informatics Internship</div>
+            <div class="text-102">June 2024 - September 2024 | Zurich, ZH</div>
+            <div class="text-103">Digitalized a questionnaire which was filled out by clients. Used Express.js, React.js, Microsoft Azure, MongoDB and Python Flask to achieve our goals.</div>
+          </div>
+          <div class="resume-item">
+            <div class="text-101"><span class="blue">UBS Switzerland AG</span> • Securities Specialist</div>
+            <div class="text-102">Sep 2021 - Apr 2022 | Opfikon, ZH</div>
+            <div class="text-103">Orchestrated the secure and efficient movement of financial assets among clients and different organizations. Transfer of different types of assets: Shares, Bonds, Funds, and more complex products like Derivatives, Precious Metals or Hedge Funds.</div>
+          </div>
+          <div class="resume-item">
+            <div class="text-101"><span class="blue">UZH</span> • Teaching Assistant in Mathematics</div>
+            <div class="text-102">Sep 2023 - Dec 2024 | Zurich, ZH</div>
+            <div class="text-103">Held two 90-minute lessons per week and teached the first-year students about mathematical content. My goal was to prepare the students that visited my lessons as best as I could for the approaching exam.</div>
+          </div>
+          <div class="resume-item">
+            <div class="text-101"><span class="blue">Skiclub Parpan</span> • Ski Coach</div>
+            <div class="text-102">Winter 2020 - Present | Parpan, GR</div>
+            <div class="text-103">Teached the way of apline skiing to a handful of young kids which turned out to be enthusiastic and good athletes. My goal was to incite the passion of skiing in the kids' minds.</div>
+          </div>
         </div>
-        <div class="skillset-resume-inner">
-          <div class="text-101">Tools</div>
-          <div class="text-103">Python, JavaScript, Java, C, HTML, CSS, React, Express.js, SQL, MongoDB, Microsoft Office</div>
+        
+        <div class="resume-name">Education</div>
+        <div class="resume-items">
+          <div class="resume-item">
+            <div class="text-101">ETHZ & EPFL</div>
+            <div class="text-102">Sep 2025 - Unknown</div>
+            <div class="text-103">M.Sc. Cyber Security</div>
+          </div>
+          <div class="resume-item">
+            <div class="text-101">UZH</div>
+            <div class="text-102">Sep 2022 - July 2025 | 5.8 Average Grade</div>
+            <div class="text-103">B.Sc. Business Informatics with a minor in Banking and Finance</div>
+          </div>
+        </div>
+        <div class="resume-name">Skillset</div>
+        <div class="resume-items skillset-resume-item">
+          <div class="skillset-resume-inner">
+            <div class="text-101">Languages</div>
+            <div class="text-103">German, English, French, Japanese</div>
+          </div>
+          <div class="skillset-resume-inner">
+            <div class="text-101">Tools</div>
+            <div class="text-103">Python, JavaScript, Java, C, HTML, CSS, React, Express.js, SQL, MongoDB, Microsoft Office</div>
+        </div>
         </div>
       </div>
     </div>
 
 
   </middle>
-  <hr>
+  
+  
+
+
+
+
+
+
+
   <footer>
-    <div class="footer_container">
-      <div class="footer_item footer-left">
-        <h3>Navigation</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="resume.html">Resume</a></li>
-        </ul>
-      </div>
-      <div class="footer_item footer-right">
-        <h3>About</h3>
-        <ul>
-          <li>Marc Heinimann</li>
-          <li>8610, Uster</li>
-          <li>Switzerland</li>
-          <li>---</li>
-        </ul>
-      </div>
-    </div>
+    <hr>
+    <h3 class="get-in-touch">Feel <span class="green">free</span> to get in <span class="blue">touch</span> with <span class="orange">me</span>!</h3>
     <div id="socialmedia">
       <a href="https://www.linkedin.com/in/marc-heinimann"><img src="pics/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
       <a href="https://www.github.com/Marc-hei"><img src="pics/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
       <a href="https://www.instagram.com/marc.heini"><img src="pics/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
-      <a href="mailto:marcheinimann@bluewin.ch"><img src="pics/icons/mail_icon.svg" class="socials" alt="Contact Me"></a>
     </div>
-    <p class="copyright">Marc Heinimann © 2023</p>
+    <p class="copyright">Made by Marc © 2025</p>
   </footer>
   <!-- 
       <p>
@@ -144,19 +164,5 @@
       </p> -->
 
 </body>
-<script>
-  const hamburger = document.getElementById('menu-toggle');
-  hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('cross');
-  });
-
-  function toggleDropdown() {
-    let dropdownContent = document.querySelector('.dropdown-content');
-    if (dropdownContent.classList.contains('show')) {
-        dropdownContent.classList.remove('show');
-    } else {
-        dropdownContent.classList.add('show');
-    }
-  }
-</script>
+<script src="script.js"></script>
 </html>
