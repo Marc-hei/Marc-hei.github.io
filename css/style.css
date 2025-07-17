@@ -450,7 +450,7 @@ footer {
 /*#########################################################################*/
 /*#########################################################################*/
 /*#########################################################################*/
-/* RESUME.HTML */
+/* ABOUT.HTML */
 #white-container {
   width: 60%;
   background: var(--weiss-cv);
@@ -459,6 +459,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  transition: transform 0.1s linear;
 }
 
 .resume-header {
@@ -586,12 +587,6 @@ footer {
 
 .hobbies-image {
   width: 30%;
-}
-
-@media (min-width:769px) and (max-width:1399px) {
-  #white-container {
-    width:60%;
-  }
 }
 
 @media (max-width:768px) {
