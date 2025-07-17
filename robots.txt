@@ -1,0 +1,13 @@
+Sitemap: https://marc-hei.github.io/sitemap.xml
+
+User-agent: Googlebot-Image
+Disallow: /pics/routingImage.jpg
+Disallow: /pics/icons/*
+Disallow: /pics/hobbies/*
+Disallow: /pics/404/*
+
+User-agent: Bingbot
+Disallow: /pics/routingImage.jpg
+Disallow: /pics/icons/*
+Disallow: /pics/hobbies/*
+Disallow: /pics/404/*
