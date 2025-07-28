@@ -2,6 +2,17 @@
 <html lang="en">
   <head>
     <title>404 - Page Not Found</title>
+    <script type="speculationrules">
+      {
+        "prerender": [
+          {
+            "where": {
+              "selector_matches": "a"
+            }
+          }
+        ]
+      }
+    </script>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="google-site-verification" content="xjLrTFQAKE7mEuUwWKV0wiGo9HeS_MAcynYNPcqOw8Q"/>

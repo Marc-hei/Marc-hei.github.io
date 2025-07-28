@@ -7,6 +7,13 @@
   --zusatz-schrift:Matter, sans-serif;
 }
 
+  @view-transition {
+  navigation: auto;
+  }
+  ::view-transition-group(*) {
+  animation-duration: 0.1s;
+  }
+
 .green {
   color:rgb(40, 134, 40);
 }
