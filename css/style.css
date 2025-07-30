@@ -198,7 +198,7 @@ footer {
   margin: 0;
   font-size:22px;
 }
-#socialmedia {
+.social-media {
   display:flex;
   justify-content:center;
   align-items:center;
@@ -356,7 +356,7 @@ footer {
 .overview {
   display: flex;
   justify-content: space-around;
-  margin: 100px 0;
+  margin: 40px 0;
   width:80%;
 }
 
@@ -449,6 +449,9 @@ footer {
   }
 }
 
+.front-page-title {
+  margin: 20px 0 0 0;
+}
 
 /*#########################################################################*/
 /*#########################################################################*/
