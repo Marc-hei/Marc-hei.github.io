@@ -320,12 +320,9 @@ footer {
 .project {
   padding: 50px;
   border-radius: 10px;
-  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project:hover {
-  transform: scale(1.1)
-}
+
 
 
 @media (max-width: 768px) {
@@ -547,12 +544,8 @@ footer {
   filter: blur(10px);
   transform: translateY(20px);
   transition: opacity 1.2s ease-out, filter 1.2s ease-out, transform 1.2s ease-out;
-  /* padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px; */
 }
 
-/* When visible */
 .fade-box.show {
   opacity: 1;
   filter: blur(0);
