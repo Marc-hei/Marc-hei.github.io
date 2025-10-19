@@ -458,7 +458,7 @@ footer {
 /*#########################################################################*/
 /*#########################################################################*/
 /* ABOUT.HTML */
-#white-container {
+.white-container {
   width: 60%;
   background: var(--weiss-cv);
   padding: 30px;
@@ -539,17 +539,24 @@ footer {
   line-height: 24px;
 }
 
-
-
-/* .bio {
-  display: flex;
-  flex-direction: column; */
-/* } */
-.bio-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.fade-box {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateY(20px);
+  transition: opacity 1.2s ease-out, filter 1.2s ease-out, transform 1.2s ease-out;
+  /* padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px; */
 }
+
+/* When visible */
+.fade-box.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+
 .color-title {
   font-size: 60px;
   font-weight: bold;
@@ -597,7 +604,7 @@ footer {
 }
 
 @media (max-width:768px) {
-  #white-container {
+  .white-container {
     width:85%;
     margin-bottom: 10px;
     padding: 10px;
