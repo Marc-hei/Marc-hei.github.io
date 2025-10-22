@@ -16,9 +16,6 @@ function toggleDropdown() {
 }
 
 function animateOnScroll() {
-  if (window.innerWidth < 768) {
-    return;
-  }; 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
