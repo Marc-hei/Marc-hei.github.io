@@ -3,6 +3,9 @@
   --graue-headings: rgb(209, 204, 204);
   --weiss-cv: rgb(243, 241, 241);
   --test-farbe:yellow;
+  --blue:rgb(67, 67, 218);
+  --green:rgb(40, 134, 40);
+  --orange:rgb(221, 139, 24);
   --haupt-schrift:'Courier New', Courier, monospace;
   --zusatz-schrift:Matter, sans-serif;
 }
@@ -15,13 +18,13 @@
   }
 
 .green {
-  color:rgb(40, 134, 40);
+  color:var(--green)
 }
 .blue {
-  color:rgb(67, 67, 218);
+  color:var(--blue);
 }
 .orange {
-  color:rgb(221, 139, 24);
+  color:var(--orange);
 }
 
 .bold {
@@ -330,11 +333,27 @@ footer {
 }
 
 
+.project-links {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  gap: 15px;
+}
 
+.project-links a {
+  text-decoration: none;
+  background-color: #7a7ae2;
+  border-radius: 10px;
+  padding: 12px 10px;
+  color: white;
+  font-family: var(--haupt-schrift);
+  font-weight:bold;
+  text-align:center;
+}
 
-
-
-
+.project-links a:hover {
+  opacity: 0.5;
+}
 
 
 
@@ -557,7 +576,6 @@ footer {
   text-align: center;
 }
 
-
 .color-title span {
   display: inline-block;
   font-family: "Oi", serif;
@@ -583,8 +601,6 @@ footer {
 .color-title span:nth-child(3n):hover {
   transform: rotate(15deg) translateY(8px) scale(1.1);
 }
-
-
 
 #hobbies-section {
   display:flex;
