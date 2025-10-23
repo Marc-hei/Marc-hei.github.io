@@ -30,9 +30,6 @@ function animateOnScroll() {
 }
 
 
-
-
-
 function updateHobbiesSection() {
   if (!imageContainer) {
     return;
@@ -42,7 +39,7 @@ function updateHobbiesSection() {
   const selectedImages = shuffled.slice(0, 3);
   selectedImages.forEach(img => {
     const imageElement = document.createElement("img");
-    imageElement.src = `pics/hobbies/${img}.jpg`;
+    imageElement.src = `assets/hobbies/${img}.jpg`;
     imageElement.alt = "Hobby photo";
     imageElement.classList.add("hobbies-image")
     imageContainer.appendChild(imageElement);

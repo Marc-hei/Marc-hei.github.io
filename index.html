@@ -25,7 +25,7 @@
     <meta property="og:site_name" content="Marc Heinimann"/>
     <meta property="og:title" content="Marc Heinimann"/>
     <meta property="og:description" content="Personal Website"/>
-    <meta property="og:image" content="https://marc-hei.github.io/pics/profileImage.jpg"/>
+    <meta property="og:image" content="https://marc-hei.github.io/assets/profileImage.jpg"/>
     <meta property="og:url" content="https://marc-hei.github.io/"/>
     <meta property="og:type" content="website"/>
     <meta charset="UTF-8"/>
@@ -35,21 +35,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oi&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="pics/favicon_io/apple-touch-icon.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="pics/favicon_io/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="pics/favicon_io/favicon-16x16.png"/>
-    <link rel="manifest" href="pics/favicon_io/site.webmanifest"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png"/>
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest"/>
     <link rel="canonical" href="https://marc-hei.github.io/"/>
   </head>
 
   <body>
     <header>
       <div class="left-header">
-        <a href="/" id="home-button"><img src="pics/favicon_io/favicon-32x32.png" alt="website logo"/></a>
+        <a href="/" id="home-button"><img src="assets/favicon_io/favicon-32x32.png" alt="website logo"/></a>
       </div>
       <div class="right-header">
+        <a href="/" class="navigation-content">About Me</a>
         <a href="projects.html" class="navigation-content">Projects</a>
-        <a href="/about.html" class="navigation-content">About Me</a>
       </div>
       <div class="dropdown" id="menu-toggle">
         <button class="dropbtn">
@@ -58,56 +58,132 @@
           <div class="bar"></div>
         </button>
         <div class="dropdown-content">
-        <a href="/">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="/about.html">About Me</a>
+          <a href="/">About Me</a>
+          <a href="projects.html">Projects</a>
         </div>
       </div>
     </header>
 
     <middle>
-      <div class="front-page-title">   
+
+    <div class="white-container fade-box">
+      <h1 class="color-title">
+        <span style="color:#1565c0">H</span>
+        <span style="color:#43a047">e</span>
+        <span style="color:#a98835">l</span>
+        <span style="color:#ef6c00">l</span>
+        <span style="color:#0e5313">o</span>
+        <span style="color:#7e57c2">!</span>
+        <img src="assets/profileImage.jpg" class="profileImage" alt="Picture of Marc">
+      </h1>
+      
+      
+
+
+      <div class="introduction">
+        <p class="text-103">Hi, my name is <span class="blue bold">Marc</span>. I am 22 years old and a Master's student in Cyber Security @ETHZ/EPFL. I recently finished my Bachelor's degree in Business Informatics @UZH.</p></p>
+        <p class="text-103">Why am I studying <span class="blue bold">Cyber Security</span>? In today's increasingly digital and interconnected world, cybersecurity has become a cornerstone of organizational resilience and individual safety. An organization must be aware of their surroundings at all times, constantly monitoring irregular network or host activity. I am deeply interested in learning how to protect assets, privacy, and data integrity. Moreover, I am captured by the challenge of securing systems against ever-evolving threats and understanding the mechanisms behind digital vulnerabilities.</p>
+        <p class="text-103">Why did I study <span class="blue bold">Business Informatics</span>? Nowadays, information technology (IT) has become central to every organization. If you don't know how to properly utilise it, you lose out on tremendous potential gains. By studying Business Informatics, I am able to assess the usage of IT, align them with business strategies, and bring upon efficiency gains. The successful integration of IT and Business allows for innovation, efficiency, and competitive advantage, showcasing the necessity of skills in both technology and strategy in the modern business environment. In my Minor (30 ECTS), I studied Banking & Finance, learning more about the financial world such as markets, risks, accounting and auditing.</p>
+        
+      </div>
+    </div>
+
+
+      <div class="white-container fade-box">
         <h1 class="color-title">
-          <span style="color:#1679e9">H</span>
-          <span style="color:#822887">e</span>
-          <span style="color:#ff8d30">L</span>
-          <span style="color:#18185f">L</span>
-          <span style="color:#1e8b08">o</span>
-          <span style="color:#9b1628">!</span>
-        </h1>
+            <span style="color:#ef6c00">R</span>
+            <span style="color:#543c95">e</span>
+            <span style="color:#fbc02d">s</span>
+            <span style="color:#1565c0">u</span>
+            <span style="color:#196b74">m</span>
+            <span style="color:#43a047">e</span>
+          </h1>
+        <div class="resume-section">
+          <div class="resume-name">Experience</div>
+          <div class="resume-items">
+            <div class="resume-item">
+              <div class="text-101"><span class="blue">OBT AG</span> • Informatics Internship</div>
+              <div class="text-102">June 2024 - September 2024 | Zurich, ZH</div>
+              <div class="text-103">Digitalized a questionnaire for trust customers. Used Express.js, React.js, Microsoft Azure, MongoDB and Python Flask to achieve our goals.</div>
+            </div>
+            <div class="resume-item">
+              <div class="text-101"><span class="blue">UBS Switzerland AG</span> • Securities Specialist</div>
+              <div class="text-102">Sep 2021 - Apr 2022 | Opfikon, ZH</div>
+              <div class="text-103">Orchestrated the secure and efficient movement of financial assets among clients and different organizations. Transfer of different types of assets: Shares, Bonds, Funds, and more complex products like Derivatives, Precious Metals or Hedge Funds.</div>
+            </div>
+            <div class="resume-item">
+              <div class="text-101"><span class="blue">UZH</span> • Teaching Assistant in Mathematics</div>
+              <div class="text-102">Sep 2023 - Dec 2024 | Zurich, ZH</div>
+              <div class="text-103">Held two 90-minute lessons per week and teached the first-year students about mathematical content. My goal was to prepare the students that visited my lessons as best as I could for the approaching exam.</div>
+            </div>
+            <div class="resume-item">
+              <div class="text-101"><span class="blue">Skiclub Parpan</span> • Ski Coach</div>
+              <div class="text-102">Winter 2020 - Present | Parpan, GR</div>
+              <div class="text-103">Teached the way of apline skiing to a handful of young kids. My goal was to incite the passion of skiing in the kids' minds.</div>
+            </div>
+          </div>
+          
+          <div class="resume-name">Education</div>
+          <div class="resume-items">
+            <div class="resume-item">
+              <div class="text-101"><span class="blue">ETHZ & EPFL</span></div>
+              <div class="text-102">Sep 2025 - Unknown</div>
+              <div class="text-103">M.Sc. Cyber Security</div>
+            </div>
+            <div class="resume-item">
+              <div class="text-101"><span class="blue">UZH</span></div>
+              <div class="text-102">Sep 2022 - July 2025 | 5.9 Average Grade</div>
+              <div class="text-103">B.Sc. Business Informatics with a minor in Banking and Finance</div>
+            </div>
+          </div>
+          <div class="resume-name">Skillset</div>
+          <div class="resume-items skillset-resume-item">
+            <div class="skillset-resume-inner">
+              <div class="text-101">Languages</div>
+              <div class="text-103">German, English, French, Japanese</div>
+            </div>
+            <div class="skillset-resume-inner">
+              <div class="text-101">Tools</div>
+              <div class="text-103">Python, JavaScript, HTML, CSS, React, Express.js, SQL, MongoDB, Java, C, Microsoft Office, hands-on cybersecurity experience from multiple <span class="blue bold"><a href="https://tryhackme.com" target="_blank">Tryhackme</a></span> classes</div>
+          </div>
+          </div>
+        </div>
       </div>
 
-      <div class="overview">
-        <div class="inview">
-          <a href="/about.html">
-            <img src="pics/profileImage.jpg" alt="Picture of Marc">
-            <p class="picturetext">
-              About Me
-            </p>
-        </a>
-        </div>
-        <div class="inview">
-          <a href="projects.html">
-            <img src="pics/routingImage.jpg" alt="Picture of Science">
-            <p class="picturetext">
-              Projects
-            </p>
-          </a>
+      <div class="white-container fade-box">
+        <h1 class="color-title">
+            <span style="color:#a23030">H</span>
+            <span style="color:#4768af">o</span>
+            <span style="color:#357d23">b</span>
+            <span style="color:#c28029">b</span>
+            <span style="color:#e1b74c">i</span>
+            <span style="color:#3b2083">e</span>
+            <span style="color:#8f193b">s</span>
+          </h1>
+        <div id="hobbies-section">
         </div>
       </div>
+
     </middle>
-    
+  
+  
+
+
+
+
+
+
+
     <footer>
       <hr>
-      <h3 class="get-in-touch">Feel <span class="green">free</span> to get in <span class="blue">touch</span> with <span class="orange">me</span>!</h3>
+      <h3 class="get-in-touch">Feel <span class="green bold">free</span> to get in <span class="blue bold">touch</span> with <span class="orange bold">me</span>!</h3>
       <div class="social-media">
-        <a href="https://www.linkedin.com/in/marc-heinimann"><img src="pics/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
-        <a href="https://www.github.com/Marc-hei"><img src="pics/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
-        <a href="https://www.instagram.com/marc.heini"><img src="pics/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
+        <a href="https://www.linkedin.com/in/marc-heinimann"><img src="assets/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
+        <a href="https://www.github.com/Marc-hei"><img src="assets/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
+        <a href="https://www.instagram.com/marc.heini"><img src="assets/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
       </div>
       <p class="copyright">Made by Marc © 2025</p>
     </footer>
-
 
     <script src="script.js"></script>
   </body>
