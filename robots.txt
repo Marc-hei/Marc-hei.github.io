@@ -1,4 +1,6 @@
-Sitemap: https://marc-hei.github.io/sitemap.xml
+Disallow: /assets/icons/*
+Disallow: /assets/hobbies/*
+Disallow: /assets/404/*
 
 User-agent: Googlebot-Image
 Disallow: /assets/icons/*
