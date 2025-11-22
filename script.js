@@ -3,7 +3,7 @@ const hamburger = document.getElementById('menu-toggle');
 const boxes = document.querySelectorAll('.fade-box');
 const imageContainer = document.getElementById("hobbies-section");
 const dropdownContent = document.querySelector('.dropdown-content');
-const allImages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17"];
+const allImages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"];
 
 
 // FUNCTIONS
