@@ -90,6 +90,9 @@ header {
   .right-header {
     display: none;
   }
+  header {
+    padding: 10px 20px;
+  }
 }
 
 
