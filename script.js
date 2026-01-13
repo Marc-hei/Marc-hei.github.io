@@ -1,7 +1,6 @@
 // DOM ELEMENTS
 const hamburger = document.getElementById('menu-toggle');
-const boxes = document.querySelectorAll('.fade-box');
-const imageContainer = document.getElementById("hobbies-section");
+const imageContainer = document.getElementById('images');
 const dropdownContent = document.querySelector('.dropdown-content');
 const allImages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"];
 
@@ -15,22 +14,9 @@ function toggleDropdown() {
   }
 }
 
-function animateOnScroll() {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
-    });
-  }, { threshold: 0.2 });
-
-  boxes.forEach(box => observer.observe(box));
-}
 
 
-function updateHobbiesSection() {
+function showImages() {
   if (!imageContainer) {
     return;
   }
@@ -41,19 +27,14 @@ function updateHobbiesSection() {
     const imageElement = document.createElement("img");
     imageElement.src = `assets/hobbies/${img}.jpg`;
     imageElement.alt = "Hobby photo";
-    imageElement.classList.add("hobbies-image")
+    imageElement.classList.add("image")
     imageContainer.appendChild(imageElement);
   });
 }
 
 
 
-animateOnScroll()
-updateHobbiesSection();
-setInterval(updateHobbiesSection, 60 * 60 * 1000);
+showImages();
 
 // EVENT LISTENERS
 hamburger.addEventListener('click', () => {hamburger.classList.toggle('cross'); toggleDropdown();});
-window.addEventListener('scroll', animateOnScroll);
-window.addEventListener('resize', animateOnScroll);
-window.addEventListener('load', animateOnScroll);
