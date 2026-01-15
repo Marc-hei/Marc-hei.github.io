@@ -1,13 +1,1 @@
-Disallow: /assets/icons/*
-Disallow: /assets/hobbies/*
-Disallow: /assets/404/*
-
-User-agent: Googlebot-Image
-Disallow: /assets/icons/*
-Disallow: /assets/hobbies/*
-Disallow: /assets/404/*
-
-User-agent: Bingbot
-Disallow: /assets/icons/*
-Disallow: /assets/hobbies/*
-Disallow: /assets/404/*
+Disallow: /assets/*
