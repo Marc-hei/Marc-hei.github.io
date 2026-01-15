@@ -32,11 +32,11 @@
   <body>
     <header>
       <div class="left-header">
-        <a href="/" id="home-button"><img src="assets/favicon_io/favicon-32x32.png" alt="website logo"/></a>
+        <a rel="noreferrer" href="/" id="home-button"><img src="assets/favicon_io/favicon-32x32.png" alt="website logo"/></a>
       </div>
       <div class="right-header">
-        <a href="/" class="navigation-content">About Me</a>
-        <a href="projects.html" class="navigation-content">Projects</a>
+        <a rel="noreferrer" href="/" class="navigation-content">About Me</a>
+        <a rel="noreferrer" href="projects.html" class="navigation-content">Projects</a>
       </div>
       <div class="dropdown" id="menu-toggle">
         <button class="dropbtn">
@@ -63,7 +63,8 @@
       
 
         <aside>
-          <p class="text-102">QR Code Generator</p><p class="text-104">Ongoing</p>
+          <p class="text-102">QR Code Generator</p>
+          <p class="text-104">Ongoing</p>
         </aside>
         <p class="text-103">
           QR Codes are fascinating because they are so simple yet so powerful and used everywhere. The largest versions can already store almost up to 3kB of data! I started this project to understand how QR codes are built, and I'm learning how encoding formats like UTF-8 and QR error correction levels are implemented. I try to write modular code that I can afterwards extend to support different styling options (color, size, embedded logo).
@@ -72,7 +73,8 @@
 
    
         <aside>
-          <p class="text-102">Trusted Execution Environments (TEEs)</p><p class="text-104">Fall 2025 @ETHZ</p>
+          <p class="text-102">Trusted Execution Environments (TEEs)</p>
+          <p class="text-104">Fall 2025 @ETHZ</p>
         </aside>
         <p class="text-103">
             TEEs are essential for confidential computing by establishing a trusted relation with the hardware. We investigated the design and security of TEEs. We leveraged Page Fault side-channel attacks to leak sensitive computation data of Intel SGX enclaves. Moreover, we exploited a mock GPU in the form of a TEE to not only leak data but also maliciously modify the output, highlighting the importance of robust TEE implementation.
@@ -82,7 +84,8 @@
 
 
         <aside>
-          <p class="text-102">Firewall</p><p class="text-104">Fall 2025 @ETHZ</p>
+          <p class="text-102">Firewall</p>
+          <p class="text-104">Fall 2025 @ETHZ</p>
         </aside>
         <p class="text-103">
           In the Network Security class, I built a (low-performance) Python-based firewall. This project incorporated modern defense mechanisms such as rate limiting, port scan detection, and stateful handling of malicious (bogus) UDP/TCP packets. Crucially, I also integrated Network Address Translation (NAT) and utilized blacklists. Implementing a firewall system highlighted the critical tension between efficient, high-performance security enforcement and the necessity of minimizing false positives.
@@ -93,7 +96,8 @@
 
 
         <aside>
-          <p class="text-102">Attacks on Machine Learning Models</p><p class="text-104">Fall 2025 @ETHZ</p>
+          <p class="text-102">Attacks on Machine Learning Models</p>
+          <p class="text-104">Fall 2025 @ETHZ</p>
         </aside>
         <p class="text-103">
           Another fun project in the Information Security Lab revolved around Machine Learning Models. We implemented Adversarial Examples in pytorch, where you can trick a model to output a wrong classification by perturbing the input in a way that is not visible by the eye but has an effect on the model. We also studied Membership Inference Attacks to determine whether a model was trained on a certain input.
@@ -103,7 +107,8 @@
 
 
         <aside>
-          <p class="text-102">Privilege Escalation on Linux</p><p class="text-104">Fall 2025 @ETHZ</p>
+          <p class="text-102">Privilege Escalation on Linux</p>
+          <p class="text-104">Fall 2025 @ETHZ</p>
         </aside>
         <p class="text-103">
           This project focused on exploiting binaries in Linux systems to gain unauthorized access and elevate privileges. In the Information Security Lab, we studyied different techniques to exploit vulnerable SUID/SGID binaries. The goal was to deeply understand system security weaknesses from an attacker's perspective and learn how to defend against these attack vectors.
@@ -114,45 +119,53 @@
 
 
         <aside>
-          <p class="text-102">Formal Verification with Tamarin</p><p class="text-104">Fall 2025 @ETHZ</p>
+          <p class="text-102">Formal Verification with Tamarin</p>
+          <p class="text-104">Fall 2025 @ETHZ</p>
         </aside>
         <p class="text-103">
-          <span class="blue bold"><a href="https://tamarin-prover.com" target="_blank">Tamarin</a></span> is a powerful tool used to formally verify security protocols, giving mathematical assurance that they are secure. In the Information Security Lab, I modelled and analyzed cryptographic protocols to prove properties like authentication, agreement and secrecy. I learned that protocols that seem logically secure may not always be in the presence of a Dolev-Yao network adversary.
+          <a class="blue bold" rel="noreferrer" href="https://tamarin-prover.com" target="_blank">Tamarin</a> is a powerful tool used to formally verify security protocols, giving mathematical assurance that they are secure. In the Information Security Lab, I modelled and analyzed cryptographic protocols to prove properties like authentication, agreement and secrecy. I learned that protocols that seem logically secure may not always be in the presence of a Dolev-Yao network adversary.
         </p>
 
 
 
 
         <aside>
-          <p class="text-102">SCION</p><p class="text-104">Fall 2025 @ETHZ</p>
+          <p class="text-102">SCION</p>
+          <p class="text-104">Fall 2025 @ETHZ</p>
         </aside>
         <p class="text-103">
-          <span class="blue bold"><a href="https://www.scion.org" target="_blank">SCION</a></span> is a future Internet architecture designed to be secure, available, and robust by design, addressing major security issues of the current BGP-based Internet. In the Network Security class, I explored its fundamental concepts, such as path-aware networking, control-plane isolation, and trust root delegation. The project involved setting up a SCION environment in Go and communicating over its channels.
+          <a class="blue bold" rel="noreferrer" href="https://www.scion.org" target="_blank">SCION</a> is a future Internet architecture designed to be secure, available, and robust by design, addressing major security issues of the current BGP-based Internet. In the Network Security class, I explored its fundamental concepts, such as path-aware networking, control-plane isolation, and trust root delegation. The project involved setting up a SCION environment in Go and communicating over its channels.
         </p>
 
             </div>
 
         <aside>
-          <p class="text-102">Passkey Implementation</p><p class="text-104">Summer 2025</p>
+          <p class="text-102">Passkey Implementation</p>
+          <p class="text-104">Summer 2025</p>
+          <a class="text-104 blue bold" rel="noreferrer" href="https://github.com/Marc-hei/authentication" target="_blank">GitHub</a>
         </aside>
         <p class="text-103">
-          The future of secure authentication are Passkeys. In a group of two, we implemented a <span class="blue bold"><a href="https://gm-authentication.netlify.app" target="_blank">Website</a></span> that used WebAuthn to replace traditional passwords with cryptographic keys stored securely on the device. Our main motivation was to understand how underlying algorithms like FIDO2, public-private key cryptography, and attestation work. This project granted us a much deeper understanding of user identity and zero-trust security models. For reference, we also added normal username & password logins as well as 2FA!
+          The future of secure authentication are Passkeys. In a group of two, we implemented a <a class="blue bold" rel="noreferrer" href="https://gm-authentication.netlify.app" target="_blank">Website</a> that used WebAuthn to replace traditional passwords with cryptographic keys stored securely on the device. Our main motivation was to understand how underlying algorithms like FIDO2, public-private key cryptography, and attestation work. This project granted us a much deeper understanding of user identity and zero-trust security models. For reference, we also added normal username & password logins as well as 2FA!
         </p>
-
-
-
-
-
-
+        
+        
+        
+        
+        
+        
         <aside>
-          <p class="text-102">Get-Together</p><p class="text-104">Spring 2024 @UZH</p>
+          <p class="text-102">Get-Together</p>
+          <p class="text-104">Spring 2024 @UZH</p>
+          <a class="text-104 blue bold" rel="noreferrer" href="https://github.com/sopra-fs24-group-11" target="_blank">GitHub</a>
         </aside>
         <p class="text-103">
           Get-Together is a web app for trip planning. This group project of 5 students at UZH was created in need of a trip planning web app where friends can plan trips together. It is possible to choose public transport connections with the help of the transport open data API, organize tasks and decide who is responsible for bringing what. The platform has many interactive features and is quite fun to use! Unfortunately, we aren't hosting the web app anymore.
         </p>
-
+        
         <aside>
-          <p class="text-102">Personal Website</p><p class="text-104">Since 2023</p>
+          <p class="text-102">Personal Website</p>
+          <p class="text-104">Since 2023</p>
+          <a class="text-104 blue bold" rel="noreferrer" href="https://github.com/Marc-hei/Marc-hei.github.io" target="_blank">GitHub</a>
         </aside>
         <p class="text-103">
           In 2023, I created this website you're currently on. I thought to myself that I wanted to learn something new and showcase my abilities to the world. Thus, I began coding, without knowing HTML, CSS, or JavaScript, and arrived at the current static website you're seeing. The process was sometimes hard but mostly fun, since I directly saw the results of my work. I really hope you like the contents and the design. If you happen to have any feedback, I would be glad to hear it!
@@ -163,10 +176,11 @@
 
 
         <aside>
-          <p class="text-102">Shopping List</p><p class="text-104">Fall 2023</p>
+          <p class="text-102">Shopping List</p>
+          <p class="text-104">Fall 2023</p>
         </aside>
         <p class="text-103">
-          Sure, you can always just use the built-in notes app or a piece of paper to make your grocery lists. However, I have a better <span class="blue bold"><a href="https://mkh-foodapp.netlify.app" target="_blank">alternative</a></span>, which I often use because I like its UI. I built all the front-end functionality using vanilla JavaScript and I added database support and login functionality with firebase. Though basic, this project taught me a lot about web development and gave me my first sense of how user interaction shapes design decisions.
+          Sure, you can always just use the built-in notes app or a piece of paper to make your grocery lists. However, I have a better <a class="blue bold" rel="noreferrer" href="https://mkh-foodapp.netlify.app" target="_blank">alternative</a>, which I often use because I like its UI. I built all the front-end functionality using vanilla JavaScript and I added database support and login functionality with firebase. Though basic, this project taught me a lot about web development and gave me my first sense of how user interaction shapes design decisions.
         </p>
 
           
@@ -178,9 +192,9 @@
       <hr>
       <h3 class="get-in-touch">Feel <span class="green bold">free</span> to get in <span class="green bold">touch</span> with <span class="green bold">me</span>!</h3>
       <div class="social-media">
-        <a href="https://www.linkedin.com/in/marc-heinimann"><img src="assets/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
-        <a href="https://www.github.com/Marc-hei"><img src="assets/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
-        <a href="https://www.instagram.com/marc.heini"><img src="assets/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
+        <a rel="noreferrer" href="https://www.linkedin.com/in/marc-heinimann"><img src="assets/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
+        <a rel="noreferrer" href="https://www.github.com/Marc-hei"><img src="assets/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
+        <a rel="noreferrer" href="https://www.instagram.com/marc.heini"><img src="assets/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
       </div>
       <p class="copyright">© 2023 - 2026. Marc Heinimann. All Rights Reserved</p>
     </footer>
