@@ -1,1 +1,3 @@
-Disallow: /assets/*
+Disallow: /assets/icons/*
+Disallow: /assets/hobbies/*
+Disallow: /assets/404/*
