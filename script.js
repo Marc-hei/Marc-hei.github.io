@@ -3,9 +3,11 @@ const hamburger = document.getElementById('menu-toggle');
 const imageContainer = document.getElementById('images');
 const dropdownContent = document.querySelector('.dropdown-content');
 const allImages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"];
+const disapperImageText = document.getElementById('disapper-image-text');
 
 
-// FUNCTIONS
+
+
 function toggleDropdown() {
   if (dropdownContent.classList.contains('show')) {
     dropdownContent.classList.remove('show');
@@ -14,9 +16,10 @@ function toggleDropdown() {
   }
 }
 
-
-
 function showImages() {
+  if (disapperImageText) {
+    disapperImageText.style.display = 'none';
+  }
   if (!imageContainer) {
     return;
   }
