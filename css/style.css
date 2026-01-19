@@ -1,10 +1,10 @@
 :root {
-  --hintergrund:rgb(225, 222, 225);
-  --blatt-hintergrund:rgb(243, 241, 241);
+  --hintergrund: rgb(225, 222, 225);
+  --blatt-hintergrund: rgb(243, 241, 241);
   --graue-headings: rgb(209, 204, 204);
-  --blue:rgb(67, 67, 218);
-  --green:rgb(40, 134, 40);
-  --haupt-schrift:Matter, sans-serif;
+  --blue: rgb(67, 67, 218);
+  --green: rgb(40, 134, 40);
+  --haupt-schrift: Matter, sans-serif;
   --zusatz-schrift:'Courier New', Courier, monospace;
   --weiss: rgb(255,255,255);
   --link-farbe: #7a7ae2;
@@ -30,6 +30,7 @@ body {
   margin: 0;
   opacity: 0;
   animation: fadeInUp 0.6s ease 0.3s forwards;
+  overflow-x: hidden;
 }
 
 @keyframes fadeInUp {
@@ -39,10 +40,10 @@ body {
 }
 
 .green {
-  color:var(--green) !important;
+  color: var(--green) !important;
 }
 .blue {
-  color:var(--blue) !important;
+  color: var(--blue) !important;
 }
 .bold {
   font-weight: bold !important;
@@ -59,12 +60,13 @@ hr {
 }
 
 
+
 /*#########################################################################*/
 /* HEADER */
 header {
   padding: 10px 60px;
   margin: 0;
-  display:flex;
+  display: flex;
   align-items: center;
   position: sticky;
   top: 0;
@@ -73,21 +75,18 @@ header {
   border-bottom: solid 1px rgba(0,0,0,0.2);
 }
 .right-header {
-  display:flex;
+  display: flex;
   align-items: center;
   gap: 50px;
   margin-left: auto;
 }
 .right-header a {
-  color:inherit;
-  text-decoration:none;
+  color: inherit;
+  text-decoration: none;
   font-family: var(--zusatz-schrift);
-  font-size: large;
+  font-size: 1.125rem;
   font-weight: bold;
   text-transform: uppercase;
-}
-.left-header a:hover, .right-header a:hover {
-  opacity:0.5;
 }
 @media (max-width: 768px) {
   .right-header {
@@ -111,15 +110,14 @@ middle-wrapper {
 middle {
   display: block;
   margin-left: 25rem;
-  margin-right: 10rem;
+  margin-right: 5rem;
 }
 aside, .page-title {
   display: block;
-  /* float: left; */
   position: absolute;
   margin-left: 0;
-  left: 2.5rem;
-  width: 20rem;
+  left: 5rem;
+  width: 17.5rem;
   text-align: right;
   list-style-type: none;
   clear: both;
@@ -128,13 +126,22 @@ aside, .page-title {
 .page-title {
     border-top: solid 3px #8d6e63;
 }
+@media (min-width:769px) and (max-width: 900px) {
+  middle {
+    margin-left: 20rem;
+    margin-right: 5rem;
+  }
+  aside, .page-title {
+    width: 12.5rem;
+  }
+}
 @media (max-width: 768px) {
   middle {
     margin: 1rem;
   }
-  .page-title, aside {
+  aside, .page-title {
     position: static;
-    margin:auto;
+    margin: auto;
     width: auto;
     text-align: left;
   }
@@ -149,28 +156,26 @@ aside, .page-title {
 /* FOOTER */
 footer {
   width: 100%;
-  padding:20px 0;
+  padding: 20px 0;
   text-align: center;
   margin: 2rem 0;
 }
 .get-in-touch {
   margin: 2rem 0 0 0;
-  font-size:22px;
+  font-size: 1.375rem;
 }
 .socials {
-  width:32px;
-  margin:5px;
-}
-.socials:hover {
-  opacity:0.5;
+  width: 32px;
+  margin: 5px;
 }
 .copyright {
   margin: 0;
-  font-size:16px;
-  opacity:0.5;
-  text-align:center;
+  font-size: 1rem;
+  opacity: 0.5;
+  text-align: center;
   text-transform: lowercase;
 }
+
 
 
 /*#########################################################################*/
@@ -179,15 +184,12 @@ footer {
   text-align: center;
   margin-left: auto;
   display: inline-block;
-  z-index:1000; /* large to keep it always in the front */
+  z-index: 1000; /* large to keep it always in the front */
 }
 .dropbtn {
   background: var(--hintergrund);
-  color: var(--weiss);
-  font-size: 25px;
   border: none;
   cursor: pointer;
-  border-radius: 10px;
 }
 .bar {
   width: 30px;
@@ -219,14 +221,11 @@ footer {
   text-decoration: none;
   display: block;
 }
-.dropdown-content a:hover {
-  background: #a7aaad;
-}
 .dropdown-content.show {
   display: block;
 }
 @media (pointer: fine) {
-  /* Rules for devices with mouse here */
+  /* for devices with a mouse */
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -244,13 +243,13 @@ footer {
 /* text formats */
 .text-101 {
   color: var(--text-101);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 26px;
 }
 .text-102 {
   color: var(--text-102);
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 300;
   line-height: 26px;
   margin: 0;
@@ -258,13 +257,13 @@ footer {
 }
 .text-103 {
   color: var(--text-103);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   line-height: 26px;
 }
 .text-104 {
   color: var(--text-104);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   line-height: 26px;
   margin: 0;
@@ -273,20 +272,19 @@ footer {
 
 
 
-
 /*#########################################################################*/
 /* images */
 #images{
   margin-top: 1rem;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 .image {
   width: 30%;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   #images {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px
@@ -295,4 +293,3 @@ footer {
     width: 70%;
   }
 }
-

@@ -32,22 +32,24 @@
   <body>
     <header>
       <div class="left-header">
-        <a rel="noreferrer" href="/" id="home-button"><img src="assets/favicon_io/favicon-32x32.png" alt="website logo"/></a>
+        <a href="/" id="home-button" aria-label="Go to home page"><img src="assets/favicon_io/favicon-32x32.png" alt="Website Logo"/></a>
       </div>
-      <div class="right-header">
-        <a rel="noreferrer" href="/" class="navigation-content">About Me</a>
-        <a rel="noreferrer" href="projects.html" class="navigation-content">Projects</a>
-      </div>
+
+      <nav class="right-header" aria-label="Desktop Navigation">
+        <a href="/" class="navigation-content">About Me</a>
+        <a href="/projects" class="navigation-content">Projects</a>
+      </nav>
+
       <div class="dropdown" id="menu-toggle">
-        <button class="dropbtn">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </button>
-        <div class="dropdown-content">
-        <a class="text-103" href="/">About Me</a>
-        <a class="text-103" href="projects.html">Projects</a>
-        </div>
+          <button class="dropbtn" aria-label="Open main menu" aria-expanded="false" aria-controls="mobile-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </button>
+        <nav class="dropdown-content" aria-label="Mobile Navigation">
+          <a class="text-103" href="/">About Me</a>
+          <a class="text-103" href="projects">Projects</a>
+        </nav>
       </div>
     </header>
 

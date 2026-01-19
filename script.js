@@ -3,23 +3,23 @@ const hamburger = document.getElementById('menu-toggle');
 const imageContainer = document.getElementById('images');
 const dropdownContent = document.querySelector('.dropdown-content');
 const allImages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16"];
-const disapperImageText = document.getElementById('disapper-image-text');
-
-
+const menuButton = document.querySelector('.dropbtn');
 
 
 function toggleDropdown() {
+  hamburger.classList.toggle('cross');
   if (dropdownContent.classList.contains('show')) {
     dropdownContent.classList.remove('show');
+    menuButton.setAttribute('aria-expanded', false);
+    menuButton.setAttribute('aria-label', 'Open main menu')
   } else {
     dropdownContent.classList.add('show');
-  }
+    menuButton.setAttribute('aria-expanded', true);
+    menuButton.setAttribute('aria-label', 'Close main menu');
+  }  
 }
 
 function showImages() {
-  if (disapperImageText) {
-    disapperImageText.style.display = 'none';
-  }
   if (!imageContainer) {
     return;
   }
@@ -38,6 +38,4 @@ function showImages() {
 
 
 showImages();
-
-// EVENT LISTENERS
-hamburger.addEventListener('click', () => {hamburger.classList.toggle('cross'); toggleDropdown();});
+hamburger.addEventListener('click', () => {toggleDropdown();});
