@@ -260,6 +260,8 @@ footer {
   font-size: 1.125rem;
   font-weight: 300;
   line-height: 26px;
+  text-align: justify;
+  hyphens: auto;
 }
 .text-104 {
   color: var(--text-104);
