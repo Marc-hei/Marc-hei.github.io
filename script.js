@@ -1,3 +1,15 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-app.js";
+import { getAnalytics, logEvent } from "https://www.gstatic.com/firebasejs/12.13.0/firebase-analytics.js";
+
+// Initialize Firebase
+const app = initializeApp({
+  apiKey: "AIzaSyB9xnW7VlmN0lf5FRcFnhrmeVSSVi0FYOw",
+  projectId: "website-28e86",
+  appId: "1:772664081378:web:6819f516be957a50dc17bb",
+  measurementId: "G-JSXMQ33K6P"
+});
+const analytics = getAnalytics(app);
+
 // DOM ELEMENTS
 const hamburger = document.getElementById('menu-toggle');
 const imageContainer = document.getElementById('images');
@@ -6,7 +18,7 @@ const allImages = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"
 const menuButton = document.querySelector('.dropbtn');
 
 
-function toggleDropdown() {
+const toggleDropdown = () => {
   hamburger.classList.toggle('cross');
   if (dropdownContent.classList.contains('show')) {
     dropdownContent.classList.remove('show');
@@ -19,7 +31,7 @@ function toggleDropdown() {
   }  
 }
 
-function showImages() {
+const showImages = () => {
   if (!imageContainer) {
     return;
   }
@@ -34,8 +46,6 @@ function showImages() {
     imageContainer.appendChild(imageElement);
   });
 }
-
-
 
 showImages();
 hamburger.addEventListener('click', () => {toggleDropdown();});
