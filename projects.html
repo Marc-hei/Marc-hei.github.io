@@ -7,7 +7,10 @@
         "prerender": [
           {
             "where": {
-              "selector_matches": "a"
+              "and": [
+                { "selector_matches": "a" },
+                { "href_matches": "/*" },
+              ]
             }
           }
         ]
@@ -47,8 +50,8 @@
             <div class="bar"></div>
           </button>
         <nav class="dropdown-content" aria-label="Mobile Navigation">
-          <a class="text-103" href="/">About Me</a>
-          <a class="text-103" href="projects">Projects</a>
+          <a href="/" class="text-103">About Me</a>
+          <a href="/projects" class="text-103">Projects</a>
         </nav>
       </div>
     </header>
@@ -58,7 +61,7 @@
       <middle>
 
         <aside class="page-title">
-          <p class="text-101">My projects and interests</p>
+          <p class="text-101">Some of my projects</p>
         </aside> 
         <p class="text-103">Dive into my latest <span class="green bold">experiments</span> in digital security, from <span class="green bold">exploit</span> analysis and reverse engineering to advanced <span class="green bold">network</span> defense configurations and <span class="green bold">protocols</span>. Find out more about what drives my curiosity and passion for cybersecurity.</p>
 
@@ -68,7 +71,7 @@
           <p class="text-104">2025 - now</p>
         </aside>
         <p class="text-103">
-          Over the past few months, I've immersed myself in the world of Capture The Flag (CTF) competitions. These challenges are more than just games; they are a playground for creative problem-solving and a vital way to stay ahead of evolving attack vectors. My experience spans low-level binary exploitation at ETHZ's Information Security Lab, rigorous hands-on training in the <a class="blue bold" rel="noreferrer" href="https://cs412.epfl.ch" target="_blank">Software Security Course</a> at EPFL, and competing in the <a class="blue bold" rel="noreferrer" href="https://swiss-hacking-challenge.ch" target="_blank">Swiss Hacking Challenge 2026</a>, where I placed 40th out of 300+ participants. From reverse engineering and cryptography to web security and forensics, I love the diverse and creative nature of these challenges. They are a great way to learn and have fun, while keeping me up to date with the latest security trends and techniques.   
+          More sporadically than I'd like, I immerse myself in the world of CTF competitions. These challenges are more than just games; they are a playground for creative problem-solving and a vital way to stay ahead of evolving attack vectors. My experience spans low-level binary exploitation at ETHZ's Information Security Lab, rigorous hands-on training in the <a href="https://cs412.epfl.ch" class="blue bold" rel="noreferrer" target="_blank">Software Security Course</a> at EPFL, and competing in the <a href="https://swiss-hacking-challenge.ch" class="blue bold" rel="noreferrer" target="_blank">Swiss Hacking Challenge 2026</a>, where I placed in the top 50 out of 260+ participants. From reverse engineering and cryptography to web security and forensics, the challenges are very diverse and creative. They are a great way to learn about good old security practices. However, I believe that some challenges are not up to date with the latest security trends and attack vectors, so I am staying informed by reading the latest security news on <a href="https://www.thehackernews.com" class="blue bold" rel="noreferrer" target="_blank">The Hacker News</a> each week.
         </p>
 
         <aside>
@@ -76,7 +79,10 @@
           <p class="text-104">2025 - now</p>
         </aside>
         <p class="text-103">
-          Network Security has piqued my interest quite a bit. In the Network Security class at ETHZ, I built a (low-performance) Python-based firewall. This project incorporated modern defense mechanisms such as rate limiting, port scan detection, stateful handling of malicious (bogus) UDP/TCP packets, blacklisting, as well as Network Address Translation (NAT). Implementing a firewall system highlighted the critical tension between efficient, high-performance security enforcement and the necessity of minimizing false positives. A second project in this class was to set up and explore the <a class="blue bold" rel="noreferrer" href="https://www.scion.org" target="_blank">SCION</a> architecture. SCION is a future Internet architecture designed to be secure, available, and robust by design, addressing major security issues of the current BGP-based Internet. In the Network Security class, I explored its fundamental concepts, such as path-aware networking, control-plane isolation, and trust root delegation. The project involved setting up a SCION environment in Go and communicating over its channels.
+          Network Security has piqued my interest quite a bit. In the Network Security class at ETHZ, I built a (low-performance) Python-based firewall. This project incorporated modern defense mechanisms such as rate limiting, port scan detection, stateful handling of malicious (bogus) UDP/TCP packets, blacklisting, as well as Network Address Translation (NAT). Implementing a firewall system highlighted the critical tension between efficient, high-performance security enforcement and the necessity of minimizing false positives. A second project in this class was to set up and explore the <a href="https://www.scion.org" class="blue bold" rel="noreferrer" target="_blank">SCION</a> architecture. SCION is a future Internet architecture designed to be secure, available, and robust by design, addressing major security issues of the current IP- and BGP-based Internet. In the Network Security class, I explored its fundamental concepts, such as path-aware networking, control-plane isolation, and trust root delegation. The project involved setting up a SCION environment in Go and communicating over its channels.
+        </p>
+        <p class="text-103">
+          Another thing I did was set up a home lab for networking and security experiments. I used it as a centralized log aggregation system with corresponding dashboards for analysis for some time, but now only as a VPN and DNS sinkhole to block malicious domains.
         </p>
 
         <aside>
@@ -84,14 +90,10 @@
           <p class="text-104">Summer 2025</p>
         </aside>
         <p class="text-103">
-          The future of secure authentication are Passkeys. In a group of two, we implemented a <a class="blue bold" rel="noreferrer" href="https://gm-authentication.netlify.app" target="_blank">website</a> that used WebAuthn to replace traditional passwords with cryptographic keys stored securely on the device. Our main motivation was to understand how underlying algorithms like FIDO2, public-private key cryptography, and attestation work. This project granted us a much deeper understanding of user identity and zero-trust security models. For reference, we also added normal username & password logins as well as 2FA!
+          The future of secure authentication are Passkeys. In a group of two, we implemented a <a href="https://gm-authentication.netlify.app" class="blue bold" rel="noreferrer" target="_blank">website</a> that used WebAuthn to replace traditional passwords with cryptographic keys stored securely on the device. Our main motivation was to understand how underlying algorithms like FIDO2, public-private key cryptography, and attestation work. This project granted us a much deeper understanding of user identity and zero-trust security models. For reference, we also added normal username & password logins as well as 2FA!
         </p>
         
-        
-        
-
-
-        
+      
         
         
         <aside>
@@ -99,7 +101,10 @@
           <p class="text-104">2023 - now</p>
         </aside>
         <p class="text-103">
-          There are many more projects that I have worked on, but I won't list them all here. They include attacks on trusted execution environments, formal verification with <a class="blue bold" rel="noreferrer" href="https://tamarin-prover.com" target="_blank">Tamarin</a>, adversarial examples on machine learning models, a <a class="blue bold" rel="noreferrer" href="https://mkh-foodapp.netlify.app/" target="_blank">shopping list</a> web app, distributed large-scale real-time routing for SBB with hadoop and spark, or <a class="blue bold" rel="noreferrer" href="https://github.com/sopra-fs24-group-11" target="_blank">Get-Together</a>, a web app for trip planning. However, I do want to mention one project that has a special place in my heart: <a class="blue bold" rel="noreferrer" href="https://github.com/Marc-hei/Marc-hei.github.io" target="_blank">this website</a>. Since 2023, I have been updating, improving and maintaining it to the best of my ability. Without knowing HTML, CSS, or JavaScript, I started and arrived at the current static website you're seeing. The process was sometimes hard but mostly fun, since I directly saw the results of my work. I really hope you like the contents and the design. If you happen to have any feedback, I would be glad to hear it! Alright, that's all for now. If you came this far, I wish you all the best, thanks a lot for reading, and peace out! ✌🏽
+          There are many more projects that I have worked on, but I won't list them all here. They include attacks on trusted execution environments, formal verification with <a href="https://tamarin-prover.com" class="blue bold" rel="noreferrer" target="_blank">Tamarin</a>, adversarial examples on machine learning models, a <a href="https://mkh-foodapp.netlify.app/" class="blue bold" rel="noreferrer" target="_blank">shopping list</a> web app, distributed large-scale real-time routing for SBB with hadoop and spark, movie recommender systems, high-performance C implementations (vectorized, optimized for cache and instruction mix), or <a href="https://github.com/sopra-fs24-group-11" class="blue bold" rel="noreferrer" target="_blank">Get-Together</a>, a web app for trip planning. 
+        </p>
+        <p class="text-103">
+          However, I do want to mention one project that has a special place in my heart: <a href="https://github.com/Marc-hei/Marc-hei.github.io" class="blue bold" rel="noreferrer" target="_blank">this website</a>. Since 2023, I have been updating, improving and maintaining it to the best of my ability. Without knowing HTML, CSS, or JavaScript, I started and arrived at the current static website you're seeing. The process was sometimes hard but mostly fun, since I directly saw the results of my work. I really hope you like the contents and the design. If you happen to have any feedback, I would be glad to hear it! Alright, that's all for now. If you came this far, I wish you all the best, thanks a lot for reading, and peace out! ✌🏽
         </p>
             
 
@@ -110,11 +115,11 @@
 
     <footer>
       <hr>
-      <h3 class="get-in-touch">Feel <span class="green bold">free</span> to get in <span class="green bold">touch</span> with <span class="green bold">me</span>!</h3>
+      <h3 class="get-in-touch">Feel <span class="green bold">free</span> to get in touch with <span class="green bold">me</span>!</h3>
       <div class="social-media">
-        <a rel="noreferrer" href="https://www.linkedin.com/in/marc-heinimann"><img src="assets/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
-        <a rel="noreferrer" href="https://www.github.com/Marc-hei"><img src="assets/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
-        <a rel="noreferrer" href="https://www.instagram.com/marc.heini"><img src="assets/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
+        <a href="https://www.linkedin.com/in/marc-heinimann" rel="noreferrer" target="_blank"><img src="assets/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
+        <a href="https://www.github.com/Marc-hei" rel="noreferrer" target="_blank"><img src="assets/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
+        <a href="https://www.instagram.com/marc.heini" rel="noreferrer" target="_blank"><img src="assets/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
       </div>
       <p class="copyright">© 2023 - 2026. Marc Heinimann. All Rights Reserved</p>
     </footer>

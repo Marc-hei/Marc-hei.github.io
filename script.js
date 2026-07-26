@@ -40,7 +40,7 @@ const showImages = () => {
   const selectedImages = shuffled.slice(0, 3);
   selectedImages.forEach(img => {
     const imageElement = document.createElement("img");
-    imageElement.src = `assets/hobbies/${img}.jpg`;
+    imageElement.src = `assets/images/${img}.jpg`;
     imageElement.alt = "Hobby photo";
     imageElement.classList.add("image")
     imageContainer.appendChild(imageElement);

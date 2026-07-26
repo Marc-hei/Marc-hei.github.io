@@ -16,7 +16,10 @@
         "prerender": [
           {
             "where": {
-              "selector_matches": "a"
+              "and": [
+                { "selector_matches": "a" },
+                { "href_matches": "/*" },
+              ]
             }
           }
         ]
@@ -61,7 +64,7 @@
           </button>
         <nav class="dropdown-content" aria-label="Mobile Navigation">
           <a class="text-103" href="/">About Me</a>
-          <a class="text-103" href="projects">Projects</a>
+          <a class="text-103" href="/projects">Projects</a>
         </nav>
       </div>
     </header>
@@ -75,8 +78,8 @@
         </aside>
           
 
-        <p class="text-103">I am a Master's student in Cybersecurity <span class="blue bold">@<a rel="noreferrer" href="https://www.ethz.ch" target="_blank">ETHZ</a>/<a rel="noreferrer" href="https://www.epfl.ch">EPFL</a></span>. You wonder why I'm studying cybersecurity? That's easy to answer! In today's increasingly digital and interconnected world, attacks can come from anywhere. If you think you are secure, please reassess, as this illusion can change instantly. An organization must be aware of their surroundings at all times, constantly monitoring irregular network or host activity. I am deeply interested in protecting assets, systems, privacy, and data integrity against ever-evolving threats.</p>
-        <p class="text-103">I got my Bachelor's degree in Business Informatics <span class="blue bold">@<a rel="noreferrer" href="https://www.uzh.ch" target="_blank">UZH</a></span>. Nowadays, information technology (IT) has become central to every organization. If you don't know how to properly utilise it, you lose out on tremendous potential gains. With my studies, I am able to assess the usage of IT, align them with business strategies, and bring upon efficiency gains. Having skills in both technology and strategy is a critical advantage in the modern business environment. In my Minor (30 ECTS), I studied Banking & Finance, learning more about the financial world such as markets, risks, accounting and auditing.</p>
+        <p class="text-103">I am a Master's student in Cybersecurity at <a href="https://www.ethz.ch" class="blue bold" rel="noreferrer" target="_blank">ETHZ</a>/<a href="https://www.epfl.ch" class="blue bold" rel="noreferrer" target="_blank">EPFL</a>. You wonder why I'm studying cybersecurity? That's easy to answer! In today's increasingly digital and interconnected world, attacks can come from anywhere. If you think you are secure, please reassess, as this illusion can change instantly. An organization must be aware of their surroundings at all times, constantly monitoring irregular network or host activity. I am deeply interested in protecting assets, systems, privacy, and data integrity against ever-evolving threats.</p>
+        <p class="text-103">I got my Bachelor's degree in Business Informatics at <a href="https://www.uzh.ch" class="blue bold" rel="noreferrer" target="_blank">UZH</a>. Nowadays, information technology (IT) has become central to every organization. If you don't know how to properly utilise it, you lose out on tremendous potential gains. With my studies, I am able to assess the usage of IT, align them with business strategies, and bring upon efficiency gains. Having skills in both technology and strategy is a critical advantage in the modern business environment. In my Minor (30 ECTS), I studied Banking & Finance, learning more about the financial world such as markets, risks, accounting and auditing.</p>
 
 
 
@@ -96,10 +99,10 @@
       </aside>
 
       <p class="text-103">
-        A personal portfolio is more than just a website; it is your digital footprint. It is very useful for showcasing your skills to recruiters and coworkers. It can serve as a resume and allows you to showcase your projects and experiences in a way a PDF never could. A well-crafted site helps you stand out in a crowded field, proves your expertise, and facilitates networking.
+        A personal portfolio is more than just a website. It is very useful for showcasing my skills to recruiters and coworkers in a way a PDF never could. A well-crafted site helps me stand out in a crowded field, proves my expertise, and facilitates networking.
       </p>
       <p class="text-103">
-        However, such an online presence is not without its risks. This is particularly true in the cybersecurity field, where the line between "sharing" and "leaking" is especially thin. Every detail you publish, no matter how trivial it may seem, serves as a data point for those you would rather not attract. Because every piece of information can be weaponized against you, I have been pretty selective about what appears on this site. What I have chosen to leave out is just as important as what I have chosen to include.
+        However, such an online presence is not without its risks. This is particularly true in the cybersecurity field, where the line between <i>sharing</i> and <i>leaking</i> is especially thin. Every detail you publish, no matter how trivial it may seem, serves as a data point for those you would rather not attract. Because every piece of information can be weaponized against you, I have been pretty selective about what appears on this site. What I have chosen to leave out is just as important as what I have chosen to include.
       </p>
       
 
@@ -107,9 +110,9 @@
         <p class="text-102">Enjoy some pictures</p>
       </aside>
       <div id="images">
-        <img class="image" src="assets/hobbies/1.jpg" alt="Hobby photo"/>
-        <img class="image" src="assets/hobbies/2.jpg" alt="Hobby photo"/>
-        <img class="image" src="assets/hobbies/3.jpg" alt="Hobby photo"/>
+        <img class="image" src="assets/images/1.jpg" alt="Hobby photo"/>
+        <img class="image" src="assets/images/2.jpg" alt="Hobby photo"/>
+        <img class="image" src="assets/images/3.jpg" alt="Hobby photo"/>
       </div>
 
       </middle>
@@ -124,11 +127,11 @@
 
     <footer>
       <hr>
-      <h3 class="get-in-touch">Feel <span class="green bold">free</span> to get in <span class="green bold">touch</span> with <span class="green bold">me</span>!</h3>
+      <h3 class="get-in-touch">Feel <span class="green bold">free</span> to get in touch with <span class="green bold">me</span>!</h3>
       <div class="social-media">
-        <a rel="noreferrer" href="https://www.linkedin.com/in/marc-heinimann"><img src="assets/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
-        <a rel="noreferrer" href="https://www.github.com/Marc-hei"><img src="assets/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
-        <a rel="noreferrer" href="https://www.instagram.com/marc.heini"><img src="assets/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
+        <a href="https://www.linkedin.com/in/marc-heinimann" rel="noreferrer" target="_blank"><img src="assets/icons/linkedin_icon.svg" class="socials" alt="Visit My LinkedIn Profile"></a>
+        <a href="https://www.github.com/Marc-hei" rel="noreferrer" target="_blank"><img src="assets/icons/github_icon.svg" class="socials" alt="Visit My GitHub Profile"></a>
+        <a href="https://www.instagram.com/marc.heini" rel="noreferrer" target="_blank"><img src="assets/icons/insta_icon.svg" class="socials"alt="Visit My Instagram Profile"></a>
       </div>
       <p class="copyright">© 2023 - 2026. Marc Heinimann. All Rights Reserved</p>
     </footer>
